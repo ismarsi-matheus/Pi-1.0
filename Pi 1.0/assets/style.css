@@ -1,9 +1,10 @@
-body{
+
+body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #e0f7fa;
+    background-image: url("img/introducao.png");
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
     display: flex;
     justify-content: center;
@@ -11,12 +12,113 @@ body{
     height: 100vh;
 }
 
-
-.container{
+.container {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 400px;
-    max-width: 90%;    
+    max-width: 90%;
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.container input[type="text"],
+.container input[type="password"],
+.container input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Evita que padding estoure a largura */
+}
+
+.container button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.container .register-btn {
+    background-color: #000;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.container .back-btn {
+    background-color: #ccc;
+    color: black;
+}
+
+/* Garantindo que os inputs do formulário fiquem dentro do container */
+.form-container {
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Posicionando os botões no canto inferior direito */
+.footer-buttons {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+/* Ajustando o rodapé */
+.footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: #888;
+}
+
+.footer .social-icons {
+    margin-top: 10px;
+}
+
+.footer .social-icons i {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.footer .buttons {
+    margin-top: 10px;
+}
+
+.footer .buttons button {
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
 }
