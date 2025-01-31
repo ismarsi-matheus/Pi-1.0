@@ -1,53 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cyber segurity lock</title>
+    <title>Cyber Security Lock</title>
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
     <div class="container">
-        <h2>Registro</h2>
-        <label for="email">E-mail</label>
-        <input type="text" id="email" placeholder="digite aqui">
-
-        <label for="username">Nome de usuario</label>
-        <input type="text" id="username" placeholder="digite aqui">
-
-        <label for="password">Senha</label>
-        <input type="password" id="password" placeholder="digite aqui">
-
-        <label for="confirm-password">Confirme a senha </label>
-        <input type="password" id="confirm-password" placeholder="digite aqui">
-
-        <div class="password-requirements">
-            <ul>
-                <li>Minimo de 15 caracteres</li>
-                <li>Uma maiuscula /minuscula</li>
-                <li>Numero</li>
-                <li>Caracteres especiais</li>
-            </ul>
-        </div>
-
-        <label for="cpf">CPF</label>
-        <input type="text" id="cpf" placeholder="Digite aqui">
-
-        <button class="register-btn">Registre-se</button>
-        <button class="back-btn">Voltar</button>
-    </div>
-    <div class="footer">
-        <div class="social-icons">
-            <i class="bi bi-whatsapp"></i>
-            <i class="bi bi-instagram"></i>
-            <i class="bi bi-youtube"></i>
-            <i class="bi bi-linkedin"></i>
-        </div>
-        <div class="buttons">
-            <button class="support-btn">Suporte</button>
-            <button class="about-btn">Sobre nos</button>
-        </div>
+        <h2>Registrar</h2>
+        <form class="form-container">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="Digite aqui">
+            
+            <label for="username">Nome de usuário</label>
+            <input type="text" id="username" name="username" placeholder="Digite aqui">
+            
+            <label for="password">Senha</label>
+            <input type="password" id="password" name="password" placeholder="Digite aqui">
+            
+            <label for="confirm-password">Confirme a senha</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Digite aqui">
+            
+            <div class="password-requirements">
+                <ul>
+                    <li>Mínimo de 20 caracteres</li>
+                    <li>Uma maiúscula / minúscula</li>
+                    <li>Número</li>
+                    <li>Caractere especial</li>
+                </ul>
+            </div>
+            
+            <label for="cpf">CPF</label>
+            <input type="text" id="cpf" name="cpf" placeholder="Digite aqui">
+            
+            <button type="submit" class="register-btn">Registrar-se</button>
+            <button type="button" class="back-btn">Voltar</button>
+        </form>
     </div>
     
+    <div class="footer">
+        <div class="social-icons">
+            <i class="fab fa-whatsapp"></i>
+            <i class="fab fa-envelope"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+        <div class="footer-buttons"> <!-- Corrigida a classe -->
+            <button>Suporte</button>
+            <button>Sobre nós</button>
+        </div>
+        <p>As imagens utilizadas neste material são meramente ilustrativas. Todos os direitos autorais pertencem aos seus respectivos proprietários. O uso destas imagens destina-se unicamente a fins ilustrativos e não pretende violar quaisquer direitos autorais.</p>
+    </div>
 </body>
 </html>
